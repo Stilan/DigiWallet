@@ -1,4 +1,4 @@
-package com.example.digiwallet.сontroller;
+package com.example.digiwallet.controller;
 
 import com.example.digiwallet.dto.TransactionDto;
 import com.example.digiwallet.dto.WalletDto;

@@ -1,4 +1,4 @@
-package com.example.digiwallet.сontroller;
+package com.example.digiwallet.controller;
 
 import com.example.digiwallet.exception.InsufficientFundsException;
 import org.springframework.http.HttpStatus;
