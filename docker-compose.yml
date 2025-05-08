@@ -1,0 +1,21 @@
+
+services:
+  app:
+    build: .
+    env_file:
+      - .env
+    ports:
+      - "${SERVER_PORT}:8080"
+    depends_on:
+      - db
+
+  db:
+    image: postgres:14
+    env_file:
+      - .env
+    environment:
+      POSTGRES_DB: digiwallet
+      POSTGRES_USER: ${SPRING_DATASOURCE_USERNAME}
+      POSTGRES_PASSWORD: ${SPRING_DATASOURCE_PASSWORD}
+    ports:
+      - "5432:5432"
